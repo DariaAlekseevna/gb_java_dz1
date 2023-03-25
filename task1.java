@@ -13,11 +13,14 @@ public class task1 {
         int n = iScanner.nextInt();
         iScanner.close();
         int res = 0;
+        int factorial = 1;
         while (n > 0) {
             res = res + n;
+            factorial *= n;
             n--;
         }
-        System.out.printf("Triangular number: %d", res);
+        System.out.printf("Triangular number: %d \nFactorial n: %d", res, factorial);
+
 
     }
 }
